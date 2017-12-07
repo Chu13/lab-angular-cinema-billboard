@@ -1,0 +1,9 @@
+
+<ul>
+  <li *ngFor="let oneMovie of moviesThang.movies">
+    <h3>{{ oneMovie.title }}</h3>
+    <img src='{{ oneMovie.poster }}'/>
+    <br />
+    <a routerLink="/movie/{{ oneMovie.id }}"> View Details </a>
+  </li>
+</ul>
